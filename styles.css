@@ -1,17 +1,22 @@
 body{
   background-color: #FFFFFF;
-  margin: 0;
   color: #221A2E;
-  text-align: center;
+  text-align: left;
   font-family: Segoe UI;
 
 }
 .Einleitung{
   background-color: #004D66;
   color: #FFFFFF;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+.Inhalt{
+  margin: 0 12% 0 12%;
+
 }
 .Semester{
-  margin: 0 30% 0 30%;
+  margin: 0 27% 0 27%;
   display: flex;
   justify-content: space-between;
   color: #FFFFFF;
@@ -20,13 +25,12 @@ a{
   color: #FFFFFF;
   font-family: Segoe UI;
 }
-.Liste1{
-  margin: 0 24% 0 24%;
-  text-align: left;
+img{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .Bild1{
-  margin: 0 5% 20px 0;
-}
-.Bild2{
-  margin: 25px 0 0 0;
+  padding-top: 18px;
 }
