@@ -42,3 +42,29 @@ img{
   width: 70%;
   height: 70%;
 }
+.Bild3{
+  float: right;
+}
+.Bild4{
+  float: left;
+  margin-left: 30%;
+}
+.Liste2, .Bild5{
+  float: left;
+}
+.P1{
+  float: right;
+  margin-right: 30%;
+}
+.P2{
+  float:right;
+}
+.Bild6{
+  width: 50%;
+  height: auto;
+}
+.Bild7{
+  padding: 6px;
+  border: 3px solid #004D66;
+  border-radius: 0px;
+}

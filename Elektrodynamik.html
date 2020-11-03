@@ -67,6 +67,51 @@
         <li>Die Dichte der Feldlinen ist proportional zur Feldstärke.</li>
       </ul>
       <img class="Bild2" src="1.3 Feldlinien.jpg">
+      <h2>1.4 Elektrischer Dipol</h2>
+      <div class="ElektrischerDipol">
+        <ul class="Liste2">
+          <li>Gesamtladung Q = 0</li>
+          <li>Abstandsvektor <strong>a</strong> zeigt von der negativen Ladung zur positiven.</li>
+          <li>Das Elektrische Dipolmoment <strong>p</strong> ergibt sich zu <strong>p</strong>=q&middot;<strong>a</strong> </li>
+          <li>Lässt man den Abstand a gegen 0 gehen, so geht die Ladung gleicherma&szlig;en gegen unendlich.<br>Demnach bleibt das Dipolmoment konstant und endlich.</li>
+          <li>Nicht nur Monopole(Ladungen) sind Quellen von E-Feldern, sondern auch Dipole.</li>
+        </ul>
+        <img class="Bild3" src="Elektrischer Dipol.jpg">
+      </div>
+      <div class="WeirdStuff"><br><p> </p><br><br><br><br><br></div>
+      <h3>Punktdipol:</h3>
+      <p>Abstand wird so klein, dass dieser keine Rolle mehr spielt. (wichtiges Konzept)</p>
+      <p>Ein Punktdipol erzeugt ein <strong>elektrostatisches Feld</strong>, welches im Folgenden bestimmt wird.</p>
+      <p>Dabei befindet sich der Punktdipol am Ort r'. Die Orte der Ladungen q<sub>+</sub> und q<sub>-</sub> sind gegeben mit <strong>r<sub>+</sub></strong>und <strong>r<sub>-</sub></strong>.</p>
+      <img class="Bild4" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{r_{\pm&space;}}=\vec{r'}\pm&space;\frac{\vec{a}}{2}" title="\large \vec{r_{\pm }}=\vec{r'}\pm \frac{\vec{a}}{2}" />
+      <p class="P1">Wobei <strong>a</strong> gegen 0 läuft</p><br><br>
+      <p>Nun lässt sich das E-Feld mittels des <strong>Superpositionsprinzip</strong> schreiben, wobei der erste Term das Feld der positiven und der zweite Term das Feld der negativen Ladung beschreibt, wodurch die unterschiedlichen Vorzeichen zustande kommen.</p>
+      <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{E}(\vec{r})=\frac{q}{4\pi&space;\epsilon_{0}}\frac{\vec{r}-\vec{r'}-\frac{\vec{a}}{2}}{\left&space;|&space;\vec{r}-\vec{r'}-&space;\frac{\vec{a}}{2}\right&space;|^{3}}-\frac{q}{4\pi&space;\epsilon_{0}}\frac{\vec{r}-\vec{r'}&plus;\frac{\vec{a}}{2}}{\left&space;|&space;\vec{r}-\vec{r'}&plus;&space;\frac{\vec{a}}{2}\right&space;|^{3}}" title="\large \vec{E}(\vec{r})=\frac{q}{4\pi \epsilon_{0}}\frac{\vec{r}-\vec{r'}-\frac{\vec{a}}{2}}{\left | \vec{r}-\vec{r'}- \frac{\vec{a}}{2}\right |^{3}}-\frac{q}{4\pi \epsilon_{0}}\frac{\vec{r}-\vec{r'}+\frac{\vec{a}}{2}}{\left | \vec{r}-\vec{r'}+ \frac{\vec{a}}{2}\right |^{3}}" />
+      <p>Um dies zu lösen wird die <strong>Taylor-Entwicklung</strong> auf den Nenner angewendet.</p>
+      <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\frac{1}{\left&space;|&space;\vec{\Delta&space;r}&plus;\vec{b}&space;\right&space;|^{3}}=\frac{1}{\left&space;|&space;\vec{\Delta&space;r}&space;\right&space;|^{3}}&plus;\left&space;[&space;\frac{\partial&space;}{\partial&space;b}\frac{1}{\left&space;|&space;\vec{\Delta&space;r}&plus;\vec{b}&space;\right&space;|^{3}}\right&space;]_{\vec{b}=0}\cdot&space;\vec{b}" title="\large \frac{1}{\left | \vec{\Delta r}+\vec{b} \right |^{3}}=\frac{1}{\left | \vec{\Delta r} \right |^{3}}+\left [ \frac{\partial }{\partial b}\frac{1}{\left | \vec{\Delta r}+\vec{b} \right |^{3}}\right ]_{\vec{b}=0}\cdot \vec{b}" />
+      <p>Führt man die partielle Ableitung nach <strong>b</strong> durch, ergibt sich:</p>
+      <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;=\frac{1}{\left&space;|&space;\vec{\Delta&space;r}&space;\right&space;|^{3}}-\left&space;[&space;\frac{3}{\left&space;|&space;\vec{\Delta&space;r}&plus;\vec{b}&space;\right&space;|^{4}}\frac{\vec{\Delta&space;r}&plus;\vec{b}}{\left&space;|&space;\vec{\Delta&space;r}&plus;\vec{b}&space;\right&space;|}\right&space;]_{\vec{b}=0}\cdot&space;\vec{b}" title="\large =\frac{1}{\left | \vec{\Delta r} \right |^{3}}-\left [ \frac{3}{\left | \vec{\Delta r}+\vec{b} \right |^{4}}\frac{\vec{\Delta r}+\vec{b}}{\left | \vec{\Delta r}+\vec{b} \right |}\right ]_{\vec{b}=0}\cdot \vec{b}" />
+      <p>Zuletzt lässt man <strong>b</strong> zu 0 werden.</p>
+      <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;=\frac{1}{\left&space;|&space;\vec{\Delta&space;r}&space;\right&space;|^{3}}-\frac{3\cdot&space;\vec{\Delta&space;r}\cdot&space;\vec{b}}{\left&space;|&space;\vec{\Delta&space;r}&space;\right&space;|^{5}}" title="\large =\frac{1}{\left | \vec{\Delta r} \right |^{3}}-\frac{3\cdot \vec{\Delta r}\cdot \vec{b}}{\left | \vec{\Delta r} \right |^{5}}" />
+      <p>Das Ergebnis der Taylor-Reihe lässt sich nun bei der Rechnung für das E-Feld verwenden, wobei das <strong>b</strong> in diesem Fall <strong>a</strong>/2 ist.</p>
+      <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{E}(\vec{r})=\frac{q}{4\pi&space;\epsilon_{0}}\left&space;[&space;\frac{\vec{\Delta&space;r}-\frac{\vec{a}}{2}}{\left&space;|&space;\vec{\Delta&space;r}\right&space;|^{3}}&plus;\frac{3\cdot&space;\left&space;(&space;\vec{\Delta&space;r}-\frac{\vec{a}}{2}\cdot&space;\vec{\Delta&space;r\cdot}&space;\frac{\vec{a}}{2}&space;\right&space;)}{\left&space;|&space;\vec{\Delta&space;r}&space;\right&space;|^{5}}&space;-\frac{\vec{\Delta&space;r}&plus;\frac{\vec{a}}{2}}{\left&space;|&space;\vec{\Delta&space;r}\right&space;|^{3}}&plus;\frac{3\cdot&space;\left&space;(&space;\vec{\Delta&space;r}&plus;\frac{\vec{a}}{2}\cdot&space;\vec{\Delta&space;r\cdot}&space;\frac{\vec{a}}{2}&space;\right&space;)}{\left&space;|&space;\vec{\Delta&space;r}&space;\right&space;|^{5}}\right&space;]" title="\large \vec{E}(\vec{r})=\frac{q}{4\pi \epsilon_{0}}\left [ \frac{\vec{\Delta r}-\frac{\vec{a}}{2}}{\left | \vec{\Delta r}\right |^{3}}+\frac{3\cdot \left ( \vec{\Delta r}-\frac{\vec{a}}{2}\cdot \vec{\Delta r\cdot} \frac{\vec{a}}{2} \right )}{\left | \vec{\Delta r} \right |^{5}} -\frac{\vec{\Delta r}+\frac{\vec{a}}{2}}{\left | \vec{\Delta r}\right |^{3}}+\frac{3\cdot \left ( \vec{\Delta r}+\frac{\vec{a}}{2}\cdot \vec{\Delta r\cdot} \frac{\vec{a}}{2} \right )}{\left | \vec{\Delta r} \right |^{5}}\right ]" />
+      <img class="Bild1" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;=\frac{q}{4\pi&space;\epsilon_{0}}&space;\left&space;(&space;-\frac{\vec{a}}{\left&space;|&space;\vec{\Delta&space;r}&space;\right&space;|^{3}}&plus;3\frac{\left&space;(&space;\vec{\Delta&space;r}&space;\cdot&space;\vec{a}\right&space;)\cdot\vec{\Delta&space;r}}{\left&space;|&space;\vec{\Delta&space;r}&space;\right&space;|^{5}}&space;\right&space;)" title="\large =\frac{q}{4\pi \epsilon_{0}} \left ( -\frac{\vec{a}}{\left | \vec{\Delta r} \right |^{3}}+3\frac{\left ( \vec{\Delta r} \cdot \vec{a}\right )\cdot\vec{\Delta r}}{\left | \vec{\Delta r} \right |^{5}} \right )" />
+      <p>Nun möchte man den Abstandsvektor <strong>a</strong> loswerden. Dazu wird das Dipolmoment <strong>p</strong> eingesetzt.</p>
+      <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;=\frac{1}{4\pi&space;\epsilon_{0}}&space;\left&space;(&space;-\frac{\vec{p}}{\left&space;|&space;\vec{\Delta&space;r}&space;\right&space;|^{3}}&plus;3\frac{\left&space;(&space;\vec{\Delta&space;r}&space;\cdot&space;\vec{p}\right&space;)\cdot\vec{\Delta&space;r}}{\left&space;|&space;\vec{\Delta&space;r}&space;\right&space;|^{5}}&space;\right&space;)" title="\large =\frac{1}{4\pi \epsilon_{0}} \left ( -\frac{\vec{p}}{\left | \vec{\Delta r} \right |^{3}}+3\frac{\left ( \vec{\Delta r} \cdot \vec{p}\right )\cdot\vec{\Delta r}}{\left | \vec{\Delta r} \right |^{5}} \right )" />
+      <p>Das berechnete E-Feld wird auch als Dipolfeld bezeichnet und lässt sich ebenfalls mithilfe von Einheitsvektoren ausdrücken.</p>
+      <img class="Bild7" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{E}\left&space;(&space;\vec{r}&space;\right&space;)=\frac{1}{4\pi&space;\epsilon_{0}}\cdot&space;\frac{3\cdot&space;\left&space;(&space;\hat{\Delta&space;r}\cdot&space;\vec{p}&space;\right&space;)\hat{\Delta&space;r}-\vec{p}}{\left&space;|&space;\vec{\Delta&space;r}&space;\right&space;|^{3}}" title="\large \vec{E}\left ( \vec{r} \right )=\frac{1}{4\pi \epsilon_{0}}\cdot \frac{3\cdot \left ( \hat{\Delta r}\cdot \vec{p} \right )\hat{\Delta r}-\vec{p}}{\left | \vec{\Delta r} \right |^{3}}" />
+      <img class="Bild5" src="Dipolfeld.jpg">
+      <br><br><br>
+      <p class="P2">Graphische Darstellung eines <strong>Dipolfeldes</strong>.<br><br>
+      Dabei zeigen die Feldlinien und das Dipolmoment vom Minuspol zum Pluspol.<br><br>
+      Der Dipol befindet sich am Ort r' = 0 <br><br>und das Dipolmoment ist gegeben als <strong>p</strong> = p <strong>z</strong>.</p><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h3>Dipol im externen, homogenen E-Feld:</h3>
+      <img class="Bild6" src="DipolInEFeld.jpg">
+      <p>Die Gesamtkraft auf den Dipol ist 0. <strong>F</strong> = <strong>F<sub>+</sub></strong> + <strong>F<sub>-</sub></strong> = q<strong>E</strong> - q<strong>E</strong> = 0</p>
+      <p>Dafür wirkt das <strong>Drehmoment M</strong>:</p>
+      <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{M}=\vec{r_{&plus;}}\times&space;\vec{F_{&plus;}}&plus;\vec{r_{-}}\times&space;\vec{F_{-}}=\frac{\vec{a}}{2}\times&space;q\vec{E}&plus;\left&space;(&space;-\frac{\vec{a}}{2}&space;\right&space;)\times&space;\left&space;(&space;-q&space;\right&space;)\vec{E}" title="\large \vec{M}=\vec{r_{+}}\times \vec{F_{+}}+\vec{r_{-}}\times \vec{F_{-}}=\frac{\vec{a}}{2}\times q\vec{E}+\left ( -\frac{\vec{a}}{2} \right )\times \left ( -q \right )\vec{E}" />
+      <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;=q\vec{a}\times&space;\vec{E}=\vec{p}\times&space;\vec{E}" title="\large =q\vec{a}\times \vec{E}=\vec{p}\times \vec{E}" />
+      <p>Das Drehmoment sorgt für die zum E-Feld <strong>parallele Ausrichtung</strong> des Dipoles.</p>
 
      <br>
    </div>
