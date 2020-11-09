@@ -60,6 +60,9 @@ img{
 .P2{
   float:right;
 }
+.P3{
+  float: left;
+}
 .Bild6{
   width: 50%;
   height: auto;
@@ -81,6 +84,16 @@ img{
   border-radius: 0px;
   margin-top: 10px;
 }
+.Bild10{
+  float: right;
+  margin: 0 5% 0 10%;
+}
+.Bild10{
+  float: right;
+  width: 30%;
+  height: auto;
+  margin: 0 5% 0 10%;
+}
 .ÜberschriftH2{
   color: #221A2E;
   font-family: Segoe UI;
@@ -91,7 +104,7 @@ img{
 .ÜberschriftH3{
   color: #221A2E;
   font-family: Segoe UI;
-  font-size: 140%;
+  font-size: 135%;
   font-weight: bold;
   text-decoration: none;
 }

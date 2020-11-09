@@ -161,7 +161,7 @@
         <p>Ein weiteres wichtiges Ergebnis ist die <strong>erste Maxwell Gleichung</strong> der Elektrostatik oder in diesem Fall das Gaußsche Gesetz in differentieller Form. Die Gleichung gilt ebenfalls für alle Volumen.</p>
         <img class="Bild7" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\triangledown&space;}\vec{E}&space;=\frac{q}{\epsilon&space;_{0}}" title="\large \vec{\triangledown }\vec{E} =\frac{q}{\epsilon _{0}}" />
         <p>Das Gaußsche Gesetz gilt nur für Elektromagnetische Felder, der Gaußsche Satz dagegen für alle Vektorfelder.</p>
-        <a class="ÜberschriftH4" href="javascript:MehrAnzeigen('SatzÜberprüfen')">Gaußsche Gesetz anhand des Coulomb Gesetz überprüfen:</a>
+        <a class="ÜberschriftH4" href="javascript:MehrAnzeigen('SatzÜberprüfen')">Gaußsche Gesetz anhand des Coulomb Gesetz überprüfen:</a><br><br>
         <div id="SatzÜberprüfen" style="display: none">
           <img class="Bild1" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{E}\left&space;(&space;\vec{r}&space;\right&space;)=\frac{1}{4\pi&space;\epsilon&space;_{0}}\iiint&space;{dV}'\rho&space;\left&space;(&space;\vec{{r}'}&space;\right&space;)\frac{\vec{\Delta&space;r}}{\left&space;(&space;\Delta&space;r&space;\right&space;)^{3}}=\frac{1}{4\pi&space;\epsilon&space;_{0}}\iiint&space;{dV}'\rho&space;\left&space;(&space;\vec{{r}'}&space;\right&space;)\frac{\vec{r}-\vec{{r}'}}{\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|^{3}}" title="\large \vec{E}\left ( \vec{r} \right )=\frac{1}{4\pi \epsilon _{0}}\iiint {dV}'\rho \left ( \vec{{r}'} \right )\frac{\vec{\Delta r}}{\left ( \Delta r \right )^{3}}=\frac{1}{4\pi \epsilon _{0}}\iiint {dV}'\rho \left ( \vec{{r}'} \right )\frac{\vec{r}-\vec{{r}'}}{\left | \vec{r}-\vec{{r}'} \right |^{3}}" />
           <p>Als nächstes wird die <strong>Divergenz</strong> des E-Feldes berechnet.</p>
@@ -175,8 +175,127 @@
         </div>
 
       </div>
+      <a class="ÜberschriftH3" href="javascript:MehrAnzeigen('DeltaFunktion')">Mathematische Grundlage: Die Diracsche Delta Funktion</a><br><br>
+      <div id="DeltaFunktion" style="display: none">
+        <p class="P3">Die Delta Funktion soll mittles des Vektorfeldes <strong>v</strong> eingeführt werden.</p><br><br><br>
+        <img class="Bild4" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{v}=\frac{\hat{r}}{r^{2}}=\frac{\vec{r}}{r^{3}}" title="\large \vec{v}=\frac{\hat{r}}{r^{2}}=\frac{\vec{r}}{r^{3}}" />
+        <img class="Bild10" src="Vektorfeld.jpg"><br><br>
+        <p>Dazu wird zunächst die Divergenz in <stron>Kugelkoordinaten</strong> berechnet. Die Koordinaten werden gewählt, da das Feld Kugelsymmetrisch ist.</p>
+        <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\triangledown&space;}\cdot&space;\vec{v}=\frac{1}{r^{2}}\frac{\partial&space;}{\partial&space;r}r^2v_{r}&plus;\frac{1}{r&space;sin&space;\Theta&space;}\frac{\partial&space;}{\partial&space;\Theta&space;}sin\Theta\cdot&space;v_{\Theta&space;}&plus;\frac{1}{rsin\Theta&space;}\frac{\partial&space;}{\partial&space;\varphi&space;}v_{\varphi&space;}" title="\large \vec{\triangledown }\cdot \vec{v}=\frac{1}{r^{2}}\frac{\partial }{\partial r}r^2v_{r}+\frac{1}{r sin \Theta }\frac{\partial }{\partial \Theta }sin\Theta\cdot v_{\Theta }+\frac{1}{rsin\Theta }\frac{\partial }{\partial \varphi }v_{\varphi }" /><br>
+        <p>Da es sich um ein zweidimensionales Vektorfeld handelt, fallen die &phi; und &Theta; Komponente weg.</p>
+        <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;=\frac{1}{r^{2}}\frac{\partial&space;}{\partial&space;r}r^2\cdot&space;\frac{1}{r^2}=\frac{1}{r^2}\frac{\partial&space;}{\partial&space;r}1=0" title="\large =\frac{1}{r^{2}}\frac{\partial }{\partial r}r^2\cdot \frac{1}{r^2}=\frac{1}{r^2}\frac{\partial }{\partial r}1=0" /><br>
+        <p>Laut der Rechnung ist das Feld <strong>quellfrei</strong>. Dies scheint nicht mit der Abbildung des Vektorfeldes übereinzustimmen. Auf das Problem wird im weiteren Verlauf eingegangen.</p>
+        <p>Zunächst soll der Gaußsche Satz angewndet werden. Dazu berechnen wir den Fluss des Feldes innerhalb einer Kugel mit dem Radius R.</p>
+        <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\oiint&space;d\vec{s}\cdot&space;\vec{v}=&space;R^2\int_{0}^{\pi&space;}d\Theta&space;sin\Theta&space;\int_{0}^{2\pi&space;}d\varphi&space;\hat{r}\frac{\hat{r}}{R^{2}}" title="\large \oiint d\vec{s}\cdot \vec{v}= R^2\int_{0}^{\pi }d\Theta sin\Theta \int_{0}^{2\pi }d\varphi \hat{r}\frac{\hat{r}}{R^{2}}" />
+        <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;=&space;\int_{0}^{\pi&space;}d\Theta&space;sin\Theta&space;\int_{0}^{2\pi&space;}d\varphi&space;=4\pi" title="\large = \int_{0}^{\pi }d\Theta sin\Theta \int_{0}^{2\pi }d\varphi =4\pi" />
+        <p>Der Gaußsche Satz liefert:</p>
+        <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\iiint_{V}&space;\vec{\triangledown&space;}\cdot&space;\vec{v}=\oiint_{dV}d\vec{s}&space;\cdot&space;\vec{v}=4\pi" title="\large \iiint_{V} \vec{\triangledown }\cdot \vec{v}=\oiint_{dV}d\vec{s} \cdot \vec{v}=4\pi" />
+        <p>Dies ist ein <strong>Wiederspruch</strong> zu unserem vorheringen Ergebnis, dass die Divergenz von <strong>v</strong> verschwindet.</p>
+        <p>Dies lässt sich erklären, da das Vektorfeld <strong>v</strong> eine <strong>Singularität</strong>, an der Stelle <strong>r</strong> = 0, hat.</p>
+        <p>Das Bedeutet, das Feld ist an dieser Stelle <strong>unendlich</strong>, weshalb an dieser Stelle aufgepasst werden muss und die Aussage, dass die Divergenz gleich 0 ist, gilt nur in dem Bereich für <strong>r</strong> ungleich 0.</p>
+        <p>Aufgrund des Wiederspruchs soll die Definition für die Divergenz so verbessert werden, dass für jeden Radius R, der Gaußsche Satz korrekt bleibt.</p>
+        <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\iiint_{V}&space;d\vec{V}\cdot&space;\vec{\triangledown&space;}\cdot&space;\vec{v}=4\pi" title="\large \iiint_{V} d\vec{V}\cdot \vec{\triangledown }\cdot \vec{v}=4\pi" />
+        <p>Dafür wird die <strong>Delta-Funktion</strong>, mit folgenden Eigenschaften, eingeführt.</p>
+        <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\left\{\begin{matrix}&space;\delta&space;\left&space;(&space;\vec{r}&space;\right&space;)=&space;0&&space;\forall&space;\vec{r}\neq&space;0\\&space;\iiint_{V}dV\delta&space;\left&space;(&space;\vec{r}&space;\right&space;)=1&space;&&space;\forall&space;\text{&space;Volumen},&space;\text{&space;die&space;}&space;\vec{r}=&space;0&space;\text{&space;enthalten}&space;\end{matrix}\right." title="\large \left\{\begin{matrix} \delta \left ( \vec{r} \right )= 0& \forall \vec{r}\neq 0\\ \iiint_{V}dV\delta \left ( \vec{r} \right )=1 & \forall \text{ Volumen}, \text{ die } \vec{r}= 0 \text{ enthalten} \end{matrix}\right." />
+        <p>Mit der Delta Funktion können wir die Divergenz auch wie folgt ausdrücken: (muss gelten damit der Gaußsche Satz angewendet werden kann.)</p>
+        <img class="Bild7" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\triangledown&space;}\cdot&space;\vec{v}=&space;\vec{\triangledown&space;}\frac{\hat{r}}{r^{2}}=&space;4\pi&space;\delta&space;\left&space;(&space;\vec{r}&space;\right&space;)" title="\large \vec{\triangledown }\cdot \vec{v}= \vec{\triangledown }\frac{\hat{r}}{r^{2}}= 4\pi \delta \left ( \vec{r} \right )" />
+        <p>Mit dieser Definition ist auch der Gaußsche Satz erfüllt.</p>
+        <p>Weitere interessante und nützliche Ergebnisse die aus der Definition folgen, sind:</p>
+        <img class="Bild7" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\triangledown&space;}\cdot&space;\frac{1}{r}=&space;\hat{r}\frac{\partial&space;}{\partial&space;r}\frac{1}{r}=-\frac{\hat{r}}&space;{r^{2}}&space;\text{&space;}\text{&space;}\text{&space;}\text{&space;}\text{&space;}\text{&space;}&space;\triangledown&space;^{2}\frac{1}{r}=&space;\vec{\triangledown&space;}\cdot&space;\vec{\triangledown&space;}\frac{1}{r}=&space;-\vec{\triangledown&space;}\frac{\hat{r}}{r^{2}}=-4\pi&space;\delta&space;\left&space;(&space;\vec{r}&space;\right&space;)" title="\large \vec{\triangledown }\cdot \frac{1}{r}= \hat{r}\frac{\partial }{\partial r}\frac{1}{r}=-\frac{\hat{r}} {r^{2}} \text{ }\text{ }\text{ }\text{ }\text{ }\text{ } \triangledown ^{2}\frac{1}{r}= \vec{\triangledown }\cdot \vec{\triangledown }\frac{1}{r}= -\vec{\triangledown }\frac{\hat{r}}{r^{2}}=-4\pi \delta \left ( \vec{r} \right )" />
+        <br>
+        <a class="ÜberschriftH4" href="javascript:MehrAnzeigen('BeispielGaußscheSatz')">Beispielrechnung zum Gaußschen Satz:</a><br><br>
+        <div id="BeispielGaußscheSatz" style="display:none">
+          <img class="Bild10" src="homogen geladene Kugel.jpg">
+          <p class="P3"><strong>Beispiel:</strong> Berechne das Feld innerhalb und außerhalb einer homogen geladenen Kugel
+            <br> mit dem Radius R und der Ladung Q.</p>
+          <p>Dazu betrachten wir zwei Fälle.</p>
+          <p>Im ersten Fall wird das Feld außerhalb der Kugel berechnet (r > R).</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\oiint_{dV}d\vec{s}\cdot&space;\vec{E}=\frac{Q}{\epsilon&space;_{0}}" title="\large \oiint_{dV}d\vec{s}\cdot \vec{E}=\frac{Q}{\epsilon _{0}}" />
+          <p>Die Berechnung des E-Feldes ist analog zu dem Fall einer Punktladung.</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{E}\left&space;(&space;\vec{r}&space;\right&space;)=\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{Q}{r^{2}}\hat{r}" title="\large \vec{E}\left ( \vec{r} \right )=\frac{1}{4\pi \epsilon _{0}}\frac{Q}{r^{2}}\hat{r}" />
+          <p>Der zweite Fall, für das E-Feld innerhalb der Kugel (r < R), ist etwas komplexer.</p>
+          <p>Die <strong>Ladungsdichte</strong> ist gegeben als Ladung pro Volumen:</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\rho&space;=\frac{Q}{\frac{4}{3}\pi&space;R^{3}}" title="\large \rho =\frac{Q}{\frac{4}{3}\pi R^{3}}" />
+          <p>Dabei ist die Ladung wie folgt definiert:</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;Q_{in}=\iiint_{V}dV\rho&space;=\rho&space;\iiint&space;dV=\frac{Q}{\frac{4}{3}\pi&space;R^{3}}\cdot&space;\frac{4}{3}\pi&space;r^{3}=Q\frac{r^{3}}{R^{3}}" title="\large Q_{in}=\iiint_{V}dV\rho =\rho \iiint dV=\frac{Q}{\frac{4}{3}\pi R^{3}}\cdot \frac{4}{3}\pi r^{3}=Q\frac{r^{3}}{R^{3}}" />
+          <p>Nun kann der Gaußsche Satz verwendet werden.</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\oiint_{dV}ds\vec{E}\left&space;(&space;\vec{r}&space;\right&space;)=\frac{Q}{\epsilon&space;_{0}}\frac{r^{3}}{R^{3}}" title="\large \oiint_{dV}ds\vec{E}\left ( \vec{r} \right )=\frac{Q}{\epsilon _{0}}\frac{r^{3}}{R^{3}}" />
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\Rightarrow&space;4\pi&space;r^{2}{E_{r}}\left&space;(&space;\vec{r}&space;\right&space;)=\frac{Q}{\epsilon&space;_{0}}\frac{r^{3}}{R^{3}}&space;\Rightarrow&space;E_{r}\left&space;(&space;r&space;\right&space;)=&space;\frac{1}{4\pi&space;\epsilon&space;_{0}}Q\frac{r}{R^3}" title="\large \Rightarrow 4\pi r^{2}{E_{r}}\left ( \vec{r} \right )=\frac{Q}{\epsilon _{0}}\frac{r^{3}}{R^{3}} \Rightarrow E_{r}\left ( r \right )= \frac{1}{4\pi \epsilon _{0}}Q\frac{r}{R^3}" />
+          <p>Das Gesamte Elektrische Feld ergibt sich zu:</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{E}\left&space;(&space;\vec{r}&space;\right&space;)=\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{Q}{R^3}\vec{r}" title="\large \vec{E}\left ( \vec{r} \right )=\frac{1}{4\pi \epsilon _{0}}\frac{Q}{R^3}\vec{r}" />
+          <img class="Bild10" src="E-FeldAbstandGraph.jpg"><br>
+          <p class="P3">Das E-Feld in Abhänigkeit vom Radius ist in der nächsten Abbildung dargestellt. </p>
+          <p class="P3">Im Graphen lässt sich ablesen, dass das Elektrische Feld innerhalb der Kugel mit r steigt <br>und außerhalb nimmt sie die gewöhliche Form einer Punktladung an.</p>
+          <p class="P3">Im Zentrum ist verschwindet das Feld.<br>
+          Die Gravitationskraft verhält sich wie das Elektrische Feld,<br> demnach verschwindet die Gravitationskraft im Erdmittelpunkt.</p><br><br><br>
+        </div>
 
-     <br>
+      </div>
+      <a style="float:left" class="ÜberschriftH2" href="javascript:MehrAnzeigen('RotationE-FeldundPotential')">1.5 Rotation vom E-Feld und skalarem Potential</a><br><br>
+      <div id="RotationE-FeldundPotential" style="display: none; float:left">
+        <br>
+        <h3>E-Feld:</h3>
+        <div >
+          <p>Die Divergenz des E-Feld ist bekannt(&rho;/&epsilon;<sub>0</sub>), wie sieht die <strong>Rotation</strong> aus?</p>
+          <p>Aus dem Coulomb Gesetz folgt:</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\nabla}\times&space;\vec{E}=\frac{1}{4\pi&space;\epsilon&space;_{0}}\iiint&space;d{V}'\rho&space;\left&space;(&space;\vec{{r}'}&space;\right&space;)\vec{\nabla_{r}}\times&space;\frac{\vec{r}-\vec{{r}'}}{\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|^{3}}" title="\large \vec{\nabla}\times \vec{E}=\frac{1}{4\pi \epsilon _{0}}\iiint d{V}'\rho \left ( \vec{{r}'} \right )\vec{\nabla_{r}}\times   \frac{\vec{r}-\vec{{r}'}}{\left | \vec{r}-\vec{{r}'} \right |^{3}}" />
+          <p>Zunächst schauen wir uns nur das letzte Kreuzprodukt an. Dazu wird die <strong>Produktregel</strong> verwendet.</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\nabla_{r}}\times&space;\frac{\vec{r}-\vec{{r}'}}{\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|^{3}}=\frac{\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|^{3}\vec{\nabla_{r}}\times&space;\left&space;(&space;\vec{r}-\vec{{r}'}&space;\right&space;)&plus;\left&space;(&space;\vec{r}-\vec{{r}'}&space;\right&space;)\times&space;\vec{\nabla_{r}}\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|^{3}}{\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|^6}" title="\large \vec{\nabla_{r}}\times \frac{\vec{r}-\vec{{r}'}}{\left | \vec{r}-\vec{{r}'} \right |^{3}}=\frac{\left | \vec{r}-\vec{{r}'} \right |^{3}\vec{\nabla_{r}}\times \left ( \vec{r}-\vec{{r}'} \right )+\left ( \vec{r}-\vec{{r}'} \right )\times \vec{\nabla_{r}}\left | \vec{r}-\vec{{r}'} \right |^{3}}{\left | \vec{r}-\vec{{r}'} \right |^6}" />
+          <p>Zusätzlich wird die <strong>Kettenregel</strong> auf den zweiten Term angewendet.</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\nabla_{r}}\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|^{3}=3\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|^{2}{\nabla_{r}}\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|=3\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|^{2}\frac{\vec{r}-\vec{{r}'}}{\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|}=\text{&space;}=3\left&space;|&space;\vec{r}-  \vec{{r}'}&space;\right&space;|\left&space;(&space;\vec{r}-\vec{{r}'}&space;\right&space;)" title="\large \vec{\nabla_{r}}\left | \vec{r}-\vec{{r}'} \right |^{3}=3\left | \vec{r}-\vec{{r}'} \right |^{2}{\nabla_{r}}\left | \vec{r}-\vec{{r}'} \right |=3\left | \vec{r}-\vec{{r}'} \right |^{2}\frac{\vec{r}-\vec{{r}'}}{\left | \vec{r}-\vec{{r}'} \right |}=\text{ }=3\left | \vec{r}-\vec{{r}'} \right |\left ( \vec{r}-\vec{{r}'} \right )" />
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\nabla}\times&space;\frac{\vec{r}-\vec{{r}'}}{\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|^{3}}=\frac{\left&space;(&space;\vec{r}-\vec{{r}'}&space;\right&space;)\times&space;3\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|\left&space;(&space;\vec{r}-\vec{{r}'}&space;\right&space;)}{\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|^6}=0" title="\large \vec{\nabla}\times \frac{\vec{r}-\vec{{r}'}}{\left | \vec{r}-\vec{{r}'} \right |^{3}}=\frac{\left ( \vec{r}-\vec{{r}'} \right )\times 3\left | \vec{r}-\vec{{r}'} \right |\left ( \vec{r}-\vec{{r}'} \right )}{\left | \vec{r}-\vec{{r}'} \right |^6}=0" />
+          <p>Das Elektrische Feld ist für eine <strong>statische</strong> Ladungsverteilung wirbelfrei.</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\nabla}\times&space;\vec{E}=0" title="\large \vec{\nabla}\times \vec{E}=0" />
+          <p>Für eine geschlossene Fläche, kann man folgendes Flächenintegral(<strong>stokes'sche Satz</strong>) definieren:</p>
+          <img class="Bild7" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;0=\iint_{s}d\vec{s}\cdot&space;\left&space;(&space;\vec{\nabla}\times&space;\vec{E}&space;\right&space;)" title="\large 0=\iint_{s}d\vec{s}\cdot \left ( \vec{\nabla}\times \vec{E} \right )" />
+          <img class="Bild1" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;0=\oint_{ds}d\vec{l}\cdot&space;\vec{E}" title="\large 0=\oint_{ds}d\vec{l}\cdot \vec{E}" />
+        </div>
+        <h3>Das skalare Potential:</h3>
+        <div>
+          <p>Da die <strong>Coulomb Kraft </strong>konservativ ist, kann das skalare Potential &Phi; eingeführt werden.</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{E}=-\vec{\nabla}\Phi" title="\large \vec{E}=-\vec{\nabla}\Phi" />
+          <p>&Phi; soll bestimmt werden, dazu nutzen wir folgende Tatsache aus der Elektrostatik.</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\nabla}\times&space;\vec{E}=0" title="\large \vec{\nabla}\times \vec{E}=0" />
+          <p>Das die Kraft <strong>konservativ</strong> ist, bedeutet, die geleistet Arbeit ist wegunabhänig.</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\int_{\vec{r_{0}}}^{\vec{r}}d\vec{l}\cdot&space;\vec{E}\rightarrow&space;konservativ" title="\large \int_{\vec{r_{0}}}^{\vec{r}}d\vec{l}\cdot \vec{E}\rightarrow konservativ" />
+          <p>Dank der Gegebenheiten kann folgende Funktion definiert werden, die stetig ist, solange das Elektrische Feld beschränkt ist.</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;):=-\int_{\vec{r_{0}}}^{\vec{r}}d\vec{{l}'}\cdot&space;\vec{E}\left&space;(&space;\vec{{r}'}&space;\right&space;)" title="\large \Phi \left ( \vec{r} \right ):=-\int_{\vec{r_{0}}}^{\vec{r}}d\vec{{l}'}\cdot \vec{E}\left ( \vec{{r}'} \right )" />
+          <p>Mit dem <strong>Fundamentalsatz</strong> ergibt sich:</p>
+          <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;-\vec{\nabla}\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)=\nabla\int_{\vec{r_{0}}}^{\vec{{r}'}}d\vec{{l}'}\cdot&space;\vec{E}\left&space;(&space;\vec{{r}'}&space;\right&space;)=\vec{E}\left&space;(&space;\vec{r}&space;\right&space;)" title="\large -\vec{\nabla}\Phi \left ( \vec{r} \right )=\nabla\int_{\vec{r_{0}}}^{\vec{{r}'}}d\vec{{l}'}\cdot \vec{E}\left ( \vec{{r}'} \right )=\vec{E}\left ( \vec{r} \right )" /><br>
+          <a class="ÜberschriftH4" href="javascript:MehrAnzeigen('BeispielPotentialKugel')">Beispielrechnung: skalares Potential:</a><br>
+          <div id="BeispielPotentialKugel" style="display: none">
+            <p>Die homogen geladene Kugel, von der Zuvor das elektrische Feld berechnet wurde, wird abermals betrachtet.</p>
+            <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{E}\left&space;(&space;\vec{r}&space;\right&space;)=\frac{1}{4\pi&space;\epsilon&space;_{0}}\left\{\begin{matrix}&space;\frac{Q}{R}\cdot&space;\vec{r}&space;&&space;,r<R\\&space;\frac{Q}{r^2}\cdot&space;\vec{r}&,r>R&space;\end{matrix}\right." title="\large \vec{E}\left ( \vec{r} \right )=\frac{1}{4\pi \epsilon _{0}}\left\{\begin{matrix} \frac{Q}{R}\cdot \vec{r} & ,r<R\\ \frac{Q}{r^2}\cdot \vec{r}&,r>R \end{matrix}\right." />
+            <p>Dabei war Q die Ladung und R der Radius.</p>
+            <p>Nun soll Zusätzlich das <strong>skalare Potential</strong>, mit Kugelkoordinaten, berechnet werden.</p>
+            <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)=-\int_{\vec{r_{0}}}^{\vec{r}}d{l}'\cdot&space;\vec{E}\left&space;(&space;\vec{{r}'}&space;\right&space;)" title="\large \Phi \left ( \vec{r} \right )=-\int_{\vec{r_{0}}}^{\vec{r}}d{l}'\cdot \vec{E}\left ( \vec{{r}'} \right )" />
+            <p>Zunächst muss eine Konstante gewählt werden, da das Potential bis auf diese Konstante definiert ist(Integrationskonstante).</p>
+            <p>Die Konstante im Potential &Phi; wird wie folgt definiert:</p>
+            <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\lim_{r&space;\to&space;\infty&space;}\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)=0" title="\large \lim_{r \to \infty }\Phi \left ( \vec{r} \right )=0" />
+            <p>In diesem Fall wird <strong>r<sub>0</sub> gleich unendlich </strong>gesetzt. </p>
+            <p>Nun reduziert sich das Integral zu:</p>
+            <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)=-\int_{\infty&space;}^{r}d{r}'\hat{{r}'}\cdot&space;E_{r}\left&space;(&space;{r}'&space;\right&space;)=-\int_{\infty&space;}^{r}d{r}'\cdot&space;E_{r}\left&space;(&space;{r}'&space;\right&space;)" title="\large \Phi \left ( \vec{r} \right )=-\int_{\infty }^{r}d{r}'\hat{{r}'}\cdot E_{r}\left ( {r}' \right )=-\int_{\infty }^{r}d{r}'\cdot E_{r}\left ( {r}' \right )" />
+            <p>Das Integral lässt sich für das Potential außerhalb und innerhalb der Kugel berechnen.</p>
+            <p>Zunächst betrachten wir den Fall r &ge; R:</p>
+            <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)=-\int_{\infty&space;}^{r}d{r}'\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{Q}{\left&space;(&space;{r}'&space;\right&space;)^{2}}=&plus;\frac{Q}{4\pi&space;\epsilon&space;_{0}}\frac{1}{{r}'}\left.\begin{matrix}&space;\\&space;\\&space;\end{matrix}\right|_{\infty&space;}^{r}=\frac{Q}{4\pi&space;\epsilon&space;_{0}}\cdot&space;\frac{1}{r}" title="\large \Phi \left ( \vec{r} \right )=-\int_{\infty }^{r}d{r}'\frac{1}{4\pi \epsilon _{0}}\frac{Q}{\left ( {r}' \right )^{2}}=+\frac{Q}{4\pi \epsilon _{0}}\frac{1}{{r}'}\left.\begin{matrix} \\ \\ \end{matrix}\right|_{\infty }^{r}=\frac{Q}{4\pi \epsilon _{0}}\cdot \frac{1}{r}" />
+            <p>Der zweite Fall innerhalb der Kugel, gilt für r < R. Hierbei muss das Integral aufgeteilt werden, da sich das E-Feld ändert.</p>
+            <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)=-\int_{\infty&space;}^{R}d{r}'\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{Q}{\left&space;(&space;{r}'&space;\right&space;)^{2}}-\int_{R}^{r}d{r}'\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{Q\cdot&space;{r}'}{R^3}" title="\large \Phi \left ( \vec{r} \right )=-\int_{\infty }^{R}d{r}'\frac{1}{4\pi \epsilon _{0}}\frac{Q}{\left ( {r}' \right )^{2}}-\int_{R}^{r}d{r}'\frac{1}{4\pi \epsilon _{0}}\frac{Q\cdot {r}'}{R^3}" />
+            <img class="Bild1" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;=\frac{Q}{4\pi&space;\epsilon&space;_{0}}\frac{1}{{r}'}\left.\begin{matrix}&space;\\&space;\\&space;\end{matrix}\right|_{\infty&space;}^{R}-\frac{Q}{4\pi&space;\epsilon&space;_{0}}\frac{\left&space;(&space;{r}'&space;\right&space;)^{2}}{2R^{3}}\left.\begin{matrix}&space;\\&space;\\&space;\end{matrix}\right|_{R}^{r}=\frac{Q}{4\pi&space;\epsilon&space;_{0}}\frac{1}{R}-\frac{Q}{4\pi&space;\epsilon&space;_{0}}\frac{r^2}{2R^3}&plus;\frac{Q}{4\pi&space;\epsilon&space;_{0}}\frac{R^2}{2R^3}" title="\large =\frac{Q}{4\pi \epsilon _{0}}\frac{1}{{r}'}\left.\begin{matrix} \\ \\ \end{matrix}\right|_{\infty }^{R}-\frac{Q}{4\pi \epsilon _{0}}\frac{\left ( {r}' \right )^{2}}{2R^{3}}\left.\begin{matrix} \\ \\ \end{matrix}\right|_{R}^{r}=\frac{Q}{4\pi \epsilon _{0}}\frac{1}{R}-\frac{Q}{4\pi \epsilon _{0}}\frac{r^2}{2R^3}+\frac{Q}{4\pi \epsilon _{0}}\frac{R^2}{2R^3}" />
+            <img class="Bild1" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;=\frac{Q}{4\pi&space;\epsilon&space;_{0}}\frac{1}{R}&plus;\frac{Q}{4\pi&space;\epsilon&space;_{0}}\frac{R^2-r^2}{2R^3}" title="\large =\frac{Q}{4\pi \epsilon _{0}}\frac{1}{R}+\frac{Q}{4\pi \epsilon _{0}}\frac{R^2-r^2}{2R^3}" />
+            <img class="Bild3" src="PotentialGeladeneKugel.jpg">
+            <p class="P3" >Das Potential außerhalb der Kugel skaliert mit 1/r.</p><br><br>
+            <p>Das Potential innerhalb der Kugel verhält sich, wie R<sup>2</sup>-r<sup>2</sup>.</p>
+            <p>Dabei ist der y-Achsenabschnitt eine <strong>Konstante</strong>.</p>
+            <p>Die Konstante lässt sich bestimmen indem r = 0 gesetzt wird.</p>
+            <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\Phi&space;\left&space;(&space;0&space;\right&space;)=\frac{3}{2}\frac{Q}{4\pi&space;\epsilon&space;_{0}}\frac{1}{R}" title="\large \Phi \left ( 0 \right )=\frac{3}{2}\frac{Q}{4\pi \epsilon _{0}}\frac{1}{R}" />
+            <p>Aus dem Potential folgt das elektrische Feld.</p>
+
+          </div>
+
+        </div><br>
+
+      </div>
+      <br>
    </div>
    <br>
   </body>
