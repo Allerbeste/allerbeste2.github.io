@@ -226,13 +226,13 @@
           <img class="Bild10" src="E-FeldAbstandGraph.jpg"><br>
           <p class="P3">Das E-Feld in Abhänigkeit vom Radius ist in der nächsten Abbildung dargestellt. </p>
           <p class="P3">Im Graphen lässt sich ablesen, dass das Elektrische Feld innerhalb der Kugel mit r steigt <br>und außerhalb nimmt sie die gewöhliche Form einer Punktladung an.</p>
-          <p class="P3">Im Zentrum ist verschwindet das Feld.<br>
-          Die Gravitationskraft verhält sich wie das Elektrische Feld,<br> demnach verschwindet die Gravitationskraft im Erdmittelpunkt.</p><br><br><br>
+          <p class="P3">Im Zentrum ist verschwindet das Feld.<br><br>
+          Die Gravitationskraft verhält sich wie das Elektrische Feld,<br> demnach verschwindet die Gravitationskraft im Erdmittelpunkt.</p><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
 
       </div>
-      <a style="float:left" class="ÜberschriftH2" href="javascript:MehrAnzeigen('RotationE-FeldundPotential')">1.5 Rotation vom E-Feld und skalarem Potential</a><br><br>
-      <div id="RotationE-FeldundPotential" style="display: none; float:left">
+      <a class="ÜberschriftH2" href="javascript:MehrAnzeigen('RotationE-FeldundPotential')">1.5 Rotation vom E-Feld und skalarem Potential</a><br><br>
+      <div id="RotationE-FeldundPotential" style="display: none">
         <br>
         <h3>E-Feld:</h3>
         <div >
@@ -295,6 +295,47 @@
         </div><br>
 
       </div>
+      <a class="ÜberschriftH3" href="javascript:MehrAnzeigen('PotentialFakten')">Fakten zum skalaren Potential</a><br><br>
+      <div id="PotentialFakten" style="display:none">
+        <ul>
+          <li>Das elektrostatische Feld kann aus dem Potential berechnet werden.<br><br> <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\vec{E}=-\nabla\cdot&space;\Phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{E}=-\nabla\cdot&space;\Phi" title="\large \vec{E}=-\nabla\cdot \Phi" /></a><br></li>
+          <li>Die Komponenten von <strong>E</strong> sind nicht unabhänig von eineander, sondern über die Rotation verknüpft.<br><br><a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\vec{\nabla}\times&space;\vec{E}=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\nabla}\times&space;\vec{E}=0" title="\large \vec{\nabla}\times \vec{E}=0" /></a><br></li>
+          <li>Oft ist es einfache das Potential zu berechnen, als das E-Feld. Da das Potential ein <strong>skalares Feld</strong> ist.</li>
+          <li>Das <strong>Superpositionsprinzip</strong> gilt.<br>
+            Zunächst gilt folgendes für eine Punktladung im Ursprung:<br><a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)=\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{q}{r}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)=\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{q}{r}" title="\large \Phi \left ( \vec{r} \right )=\frac{1}{4\pi \epsilon _{0}}\frac{q}{r}" /></a>
+            <br>
+            Das <strong>Superpositionsprinzip</strong> kann nun für eine beliebige Ladungsverteilung &rho;(<strong>r'</strong>) verwendet werden.<br><br>
+            <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)=\frac{1}{4\pi&space;\epsilon&space;_{0}}\iiint&space;d{V}'\frac{\rho&space;\left&space;(&space;\vec{{r}'}&space;\right&space;)}{\Delta&space;r}=\frac{1}{4\pi&space;\epsilon&space;_{0}}\iiint&space;d{V}'\frac{\rho&space;\left&space;(&space;\vec{{r}'}&space;\right&space;)}{\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)=\frac{1}{4\pi&space;\epsilon&space;_{0}}\iiint&space;d{V}'\frac{\rho&space;\left&space;(&space;\vec{{r}'}&space;\right&space;)}{\Delta&space;r}=\frac{1}{4\pi&space;\epsilon&space;_{0}}\iiint&space;d{V}'\frac{\rho&space;\left&space;(&space;\vec{{r}'}&space;\right&space;)}{\left&space;|&space;\vec{r}-\vec{{r}'}&space;\right&space;|}" title="\large \Phi \left ( \vec{r} \right )=\frac{1}{4\pi \epsilon _{0}}\iiint d{V}'\frac{\rho \left ( \vec{{r}'} \right )}{\Delta r}=\frac{1}{4\pi \epsilon _{0}}\iiint d{V}'\frac{\rho \left ( \vec{{r}'} \right )}{\left | \vec{r}-\vec{{r}'} \right |}" /></a>
+            <br>
+            Dies ist das <strong>Poisson Integral</strong> und es ist einfacher als das allgemeine Coulomb Gesetz für E.
+        </ul>
+      </div>
+      <a class="ÜberschriftH2" href="javascript:MehrAnzeigen('PoissonUndLaplace')">Die Poisson und Laplace Gleichung</a>
+      <div id="PoissonUndLaplace" style="display:none">
+        <p>Aus bekannten Gleichungen 1, 2 soll ein Ausdruck für das Potential &Phi; hergeleitet werden.</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\vec{\nabla}\cdot&space;\vec{E}=\frac{\rho&space;\left&space;(\vec{&space;r}&space;\right&space;)}{\epsilon&space;_{0}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\nabla}\cdot&space;\vec{E}=\frac{\rho&space;\left&space;(\vec{&space;r}&space;\right&space;)}{\epsilon&space;_{0}}" title="\large \vec{\nabla}\cdot \vec{E}=\frac{\rho \left (\vec{ r} \right )}{\epsilon _{0}}" /></a>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\vec{\nabla}\times&space;\vec{E}=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\nabla}\times&space;\vec{E}=0" title="\large \vec{\nabla}\times \vec{E}=0" /></a>
+        <p>In der zweiten Gleichung wird nun das elektrische Feld mit dem Potential ausgedrückt. Daraus folgt:</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;-\vec{\nabla}\times&space;\vec{\nabla}\Phi&space;=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;-\vec{\nabla}\times&space;\vec{\nabla}\Phi&space;=0" title="\large -\vec{\nabla}\times \vec{\nabla}\Phi =0" /></a>
+        <p>Die Gleichung ist erfüllt, da die Rotation von einem Gradient immer Null entspricht.</p>
+        <p>In die erste Gleichung (Gaußsches Gesetz) wird ebefalls das Potential eingesetzt.</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;-\vec{\nabla}\cdot&space;\vec{\nabla}\Phi=-\nabla^{2}\Phi&space;=\frac{\rho}{\epsilon&space;_{0}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;-\vec{\nabla}\cdot&space;\vec{\nabla}\Phi=-\nabla^{2}\Phi&space;=\frac{\rho}{\epsilon&space;_{0}}" title="\large -\vec{\nabla}\cdot \vec{\nabla}\Phi=-\nabla^{2}\Phi =\frac{\rho}{\epsilon _{0}}" /></a>
+        <p>Dies ist die <strong>Poisson Gleichung</strong>.</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\nabla^{2}\Phi&space;=-\frac{\rho}{\epsilon&space;_{0}}" target="_blank"><img class="Bild7" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\nabla^{2}\Phi&space;=-\frac{\rho}{\epsilon&space;_{0}}" title="\large \nabla^{2}\Phi =-\frac{\rho}{\epsilon _{0}}" /></a>
+        <p>Die <strong>Laplace Gleichung</strong> ist die Poisson Gleichung für den Fall, dass es keine Ladung gibt oder das diese verschwindet.</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\nabla^{2}\Phi&space;=0" target="_blank"><img class="Bild7" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\nabla^{2}\Phi&space;=0" title="\large \nabla^{2}\Phi =0" /></a>
+        <p>Die <strong>Poisson Gleichung</strong> hat <strong>keine eindeutige</strong> Lösung. Deshalb sind <strong>Randbedingungen</strong> notwendig.</p>
+        <h3>Eigenschaften der Laplace Gleichung:</h3>
+        <div>
+          <p>Laplace Gleichung:</p>
+          <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\nabla^{2}\Phi&space;=0" target="_blank"><img class="Bild7" src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\nabla^{2}\Phi&space;=0" title="\large \nabla^{2}\Phi =0" /></a>
+          <p>Die Gleichung bestimmt das Potential in einem <strong>ladungsfreien</strong> Volumen V, bei gegebenen Randbedigungen.</p>
+          <p>Die Laplace Gleichung lässt sich in 1,2 und 3 Dimensionen betrachten. Dabei fällt auf, dass das Potential in den Dimensionen <strong>keine Extrema im inneren, sondern nur am Rand</strong> hat.</p>
+
+        </div>
+      </div>
+      
+
       <br>
    </div>
    <br>

@@ -1,0 +1,117 @@
+body{
+  background-color: #FFFFFF;
+  color: #221A2E;
+  text-align: left;
+  font-family: Segoe UI;
+
+}
+.Einleitung{
+  background-color: #004D66;
+  color: #FFFFFF;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+.Titel{
+  font-size: 260%;
+}
+.Inhalt{
+  margin: 0 5% 0 5%;
+
+}
+.Semester{
+  margin: 0 27% 0 27%;
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  font-size: 120%;
+}
+a{
+  color: #FFFFFF;
+  font-family: Segoe UI;
+}
+img{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Bild1{
+  padding-top: 18px;
+}
+.Bild2{
+  width: 70%;
+  height: 70%;
+}
+.Bild3{
+  float: right;
+  margin-right: 10%;
+}
+.Bild4{
+  float: left;
+  margin-left: 30%;
+}
+.Liste2, .Bild5{
+  float: left;
+}
+.P1{
+  float: right;
+  margin-right: 30%;
+}
+.P2{
+  float:right;
+}
+.P3{
+  float: left;
+}
+.Bild6{
+  width: 50%;
+  height: auto;
+}
+.Bild7{
+  padding: 6px;
+  border: 3px solid #004D66;
+  border-radius: 0px;
+}
+.Bild8{
+  width: 30%;
+  height: auto;
+  float: right;
+  margin-right: 10%;
+}
+.Bild9{
+  padding: 6px;
+  border: 3px solid #004D66;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+.Bild10{
+  float: right;
+  margin: 0 5% 0 10%;
+}
+.Bild10{
+  float: right;
+  width: 30%;
+  height: auto;
+  margin: 0 5% 0 10%;
+}
+.ÜberschriftH2{
+  color: #221A2E;
+  font-family: Segoe UI;
+  font-size: 160%;
+  font-weight: bold;
+  text-decoration: none;
+}
+.ÜberschriftH3{
+  color: #221A2E;
+  font-family: Segoe UI;
+  font-size: 135%;
+  font-weight: bold;
+  text-decoration: none;
+}
+.ÜberschriftH4{
+  color: #221A2E;
+  font-family: Segoe UI;
+  font-size: 120%;
+  font-weight: bold;
+  text-decoration: none;
+}
