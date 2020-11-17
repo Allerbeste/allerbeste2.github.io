@@ -310,7 +310,7 @@
             Dies ist das <strong>Poisson Integral</strong> und es ist einfacher als das allgemeine Coulomb Gesetz für E.
         </ul>
       </div>
-      <a class="ÜberschriftH2" href="javascript:MehrAnzeigen('PoissonUndLaplace')">Die Poisson und Laplace Gleichung</a>
+      <a class="ÜberschriftH2" href="javascript:MehrAnzeigen('PoissonUndLaplace')">Die Poisson und Laplace Gleichung</a><br><br>
       <div id="PoissonUndLaplace" style="display:none">
         <p>Aus bekannten Gleichungen 1, 2 soll ein Ausdruck für das Potential &Phi; hergeleitet werden.</p>
         <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\vec{\nabla}\cdot&space;\vec{E}=\frac{\rho&space;\left&space;(\vec{&space;r}&space;\right&space;)}{\epsilon&space;_{0}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{\nabla}\cdot&space;\vec{E}=\frac{\rho&space;\left&space;(\vec{&space;r}&space;\right&space;)}{\epsilon&space;_{0}}" title="\large \vec{\nabla}\cdot \vec{E}=\frac{\rho \left (\vec{ r} \right )}{\epsilon _{0}}" /></a>
@@ -334,7 +334,60 @@
 
         </div>
       </div>
-      
+      <a class="ÜberschriftH2" href="javascript:MehrAnzeigen('EFeldGrenzflächen')">Das Elektrische Feld und skalare Potential an Grenzflächen</a><br><br>
+      <div id="EFeldGrenzflächen" style="display:none">
+        <h3>Earnshaws Theorem:</h3>
+        <p>Eine Probeladung hat im elektrostatischen Feld einer beliebigen Ladungsanordnung <strong>keine stabile Gleichgewichtslage</strong>. Das Potential besitzt <strong>kein lokales Minimum</strong>, da sie Laplace Gleichung sonst nicht erfüllt ist.</p>
+        <h2>Elektrische Feld an Grenzflächen</h2>
+        <h3>Normalkomponente:</h3>
+        <img class="Bild3" src="StokesscheSchleife.jpg">
+        <p>Die Normalkomponente ändert sich an der Grenzfläche diskontinuierlich.</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\hat{n}\cdot&space;\left&space;(&space;\vec{E_{2}}-\vec{E_{1}}&space;\right&space;)=\frac{\sigma&space;}{\epsilon&space;_{0}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\hat{n}\cdot&space;\left&space;(&space;\vec{E_{2}}-\vec{E_{1}}&space;\right&space;)=\frac{\sigma&space;}{\epsilon&space;_{0}}" title="\large \hat{n}\cdot \left ( \vec{E_{2}}-\vec{E_{1}} \right )=\frac{\sigma }{\epsilon _{0}}" /></a>
+        <h3>Tangentiale Komponente:</h3>
+        <p>Die tangentiale Komponente ist senkrecht zur Normalkomponente.</p>
+        <p>An der geladnen Fläche ist die Tangentialkomponente <strong>stetig</strong>.</p>
+        <p>Somit ergeben sich die <strong>Randbedingungen</strong> an der geladenen Fläche.</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\left\{\begin{matrix}&space;E_{2n}-E_{1n}=\frac{\sigma&space;}{\epsilon&space;_{0}}&space;&&space;\\&space;E_{2t}=E_{1t}&&space;\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\left\{\begin{matrix}&space;E_{2n}-E_{1n}=\frac{\sigma&space;}{\epsilon&space;_{0}}&space;&&space;\\&space;E_{2t}=E_{1t}&&space;\end{matrix}\right." title="\large \left\{\begin{matrix} E_{2n}-E_{1n}=\frac{\sigma }{\epsilon _{0}} & \\ E_{2t}=E_{1t}& \end{matrix}\right." /></a>
+        <h2>Skalare Potential an Grenzflächen</h2>
+        <p>Das Potential ergibt sich durch die Integration des elektrischen Feldes.</p>
+        <p>Das skalare Potential ist an der geladenen Oberfläche <strong>stetig</strong>.</p>
+        <img src="Dipolschicht.jpg" class="Bild11">
+        <h3>Dipolschicht:</h3>
+        <p>Man hat zwei geladene Flächen mit geringem Abstand i.</p>
+        <p>Die Normalkomponente des E-Feldes ist <strong>stetig</strong>, sowie die Tangentialkomponente.</p><br><br>
+      </div>
+      <a class="ÜberschriftH2" href="javascript:MehrAnzeigen('ArbeitEnergieElektrostatik')">Arbeit und Energie in der Elektrostatik</a><br><br>
+      <div id="ArbeitEnergieElektrostatik" style="display:none">
+        <p>Wie viel Energie kostet es eine Probeladung q vom Ort a(in Ruhe) zum Ort b(in Ruhe) zu bewegen?</p>
+        <p>Die Gleichungen aus der klassischen Mechanik können verwendet werden.</p>
+        <p>Die <strong>Elektrostatische Kraft</strong> ist gegeben als:</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\vec{F_{el}}=q\cdot&space;\vec{E}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{F_{el}}=q\cdot&space;\vec{E}" title="\large \vec{F_{el}}=q\cdot \vec{E}" /></a>
+        <p>Und die <strong>Arbeit</strong>, die die Ladung selbst erzeugt, lässt sich über ein <strong>wegunabhäniges</strong> Wegintegral ausdrücken.</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;W_{el}=\int_{\vec{a}}^{\vec{b}}d\vec{l}\cdot&space;\vec{F_{el}}\left&space;(&space;\vec{r}&space;\right&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;W_{el}=\int_{\vec{a}}^{\vec{b}}d\vec{l}\cdot&space;\vec{F_{el}}\left&space;(&space;\vec{r}&space;\right&space;)" title="\large W_{el}=\int_{\vec{a}}^{\vec{b}}d\vec{l}\cdot \vec{F_{el}}\left ( \vec{r} \right )" /></a>
+        <p>Die Arbeit W die an der Ladung verrichtet werden muss um sie von a nach b zu bringen:</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;W=-W_{el}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;W=-W_{el}" title="\large W=-W_{el}" /></a>
+        <p>W ist die <strong>Potentielle Energie</strong> im elektrischen Feld.</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;W=q\cdot&space;\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;W=q\cdot&space;\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)" title="\large W=q\cdot \Phi \left ( \vec{r} \right )" /></a>
+        <h3>Potentielle Energie von N Punktladungen:</h3>
+        <p>N Ladungen werden aus dem Unendlichen geholt. Welche potentielle Energie wird benötigt?</p>
+        <p><strong>Ladung 1:</strong> kostet keine Energie, da noch kein E-Feld vorhanden ist.</p>
+        <p><strong>Ladung 2:</strong> kostet Energie</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;W_{2}=q_{2}\cdot&space;\Phi&space;_{1}\left&space;(&space;\vec{r_{2}}&space;\right&space;)=q_{2}\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{q_{1}}{\left&space;|&space;\vec{r_{2}}-\vec{r_{1}}&space;\right&space;|}=\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{q_{1}\cdot&space;q_{2}}{\left&space;|&space;\vec{r_{2}}&space;-\vec{r_{1}}\right&space;|}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;W_{2}=q_{2}\cdot&space;\Phi&space;_{1}\left&space;(&space;\vec{r_{2}}&space;\right&space;)=q_{2}\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{q_{1}}{\left&space;|&space;\vec{r_{2}}-\vec{r_{1}}&space;\right&space;|}=\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{q_{1}\cdot&space;q_{2}}{\left&space;|&space;\vec{r_{2}}&space;-\vec{r_{1}}\right&space;|}" title="\large W_{2}=q_{2}\cdot \Phi _{1}\left ( \vec{r_{2}} \right )=q_{2}\frac{1}{4\pi \epsilon _{0}}\frac{q_{1}}{\left | \vec{r_{2}}-\vec{r_{1}} \right |}=\frac{1}{4\pi \epsilon _{0}}\frac{q_{1}\cdot q_{2}}{\left | \vec{r_{2}} -\vec{r_{1}}\right |}" /></a>
+        <p><strong>Ladung 3:</strong> </p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;W_{3}=q_{3}\cdot&space;\Phi&space;_{1\text{&space;und&space;}2}\left&space;(&space;\vec{r_{3}}&space;\right&space;)=\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{q_{1}\cdot&space;q_{3}}{\left&space;|&space;\vec{r_{3}}-\vec{r_{1}}&space;\right&space;|}&plus;\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{q_{3}\cdot&space;q_{2}}{\left&space;|&space;\vec{r_{3}}&space;-\vec{r_{2}}\right&space;|}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;W_{3}=q_{3}\cdot&space;\Phi&space;_{1\text{&space;und&space;}2}\left&space;(&space;\vec{r_{3}}&space;\right&space;)=\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{q_{1}\cdot&space;q_{3}}{\left&space;|&space;\vec{r_{3}}-\vec{r_{1}}&space;\right&space;|}&plus;\frac{1}{4\pi&space;\epsilon&space;_{0}}\frac{q_{3}\cdot&space;q_{2}}{\left&space;|&space;\vec{r_{3}}&space;-\vec{r_{2}}\right&space;|}" title="\large W_{3}=q_{3}\cdot \Phi _{1\text{ und }2}\left ( \vec{r_{3}} \right )=\frac{1}{4\pi \epsilon _{0}}\frac{q_{1}\cdot q_{3}}{\left | \vec{r_{3}}-\vec{r_{1}} \right |}+\frac{1}{4\pi \epsilon _{0}}\frac{q_{3}\cdot q_{2}}{\left | \vec{r_{3}} -\vec{r_{2}}\right |}" /></a>
+        <p>Für alle weiteren Ladungen kann die potentielle Energie mit dem <strong>Superpositionsprinzip </strong>analog erweitert werden.</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;W=\frac{1}{4\pi&space;\epsilon&space;_{0}}\sum_{i,j=1&space;}^{n}\frac{q_{i}\cdot&space;q_{j}}{\left&space;|&space;\vec{r_{j}}&space;-\vec{r_{i}}\right&space;|}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;W=\frac{1}{4\pi&space;\epsilon&space;_{0}}\sum_{i,j=1&space;}^{n}\frac{q_{i}\cdot&space;q_{j}}{\left&space;|&space;\vec{r_{j}}&space;-\vec{r_{i}}\right&space;|}" title="\large W=\frac{1}{4\pi \epsilon _{0}}\sum_{i,j=1 }^{n}\frac{q_{i}\cdot q_{j}}{\left | \vec{r_{j}} -\vec{r_{i}}\right |}" /></a>
+        <h3>Potentielle Energie über das Feld ausgedrückt:</h3>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;W=\frac{1}{2}\sum_{i}q_{i}\frac{1}{4\pi&space;\epsilon&space;_{0}}\sum_{j,j\neq&space;i&space;}\frac{q_{j}}{\left&space;|&space;\vec{r_{j}}&space;-\vec{r_{i}}\right&space;|}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;W=\frac{1}{2}\sum_{i}q_{i}\frac{1}{4\pi&space;\epsilon&space;_{0}}\sum_{j,j\neq&space;i&space;}\frac{q_{j}}{\left&space;|&space;\vec{r_{j}}&space;-\vec{r_{i}}\right&space;|}" title="\large W=\frac{1}{2}\sum_{i}q_{i}\frac{1}{4\pi \epsilon _{0}}\sum_{j,j\neq i }\frac{q_{j}}{\left | \vec{r_{j}} -\vec{r_{i}}\right |}" /></a>
+        <p>Der Term ab dem Vorfaktor 1/4&pi;&epsilon;<sub>0</sub> ist das <strong>skalare Potential</strong>.</p>
+        <p><strong>Selbstenergie:</strong> (Alle Ladungen sind vorhanden die das Potential erzeugen)</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;W=\frac{1}{2}\sum_{i}q_{i}\Phi&space;\left&space;(&space;\vec{r_{i}}&space;\right&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;W=\frac{1}{2}\sum_{i}q_{i}\Phi&space;\left&space;(&space;\vec{r_{i}}&space;\right&space;)" title="\large W=\frac{1}{2}\sum_{i}q_{i}\Phi \left ( \vec{r_{i}} \right )" /></a>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;W=\frac{1}{2}\iiint&space;dV\rho&space;\left&space;(&space;\vec{r}&space;\right&space;)\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;W=\frac{1}{2}\iiint&space;dV\rho&space;\left&space;(&space;\vec{r}&space;\right&space;)\Phi&space;\left&space;(&space;\vec{r}&space;\right&space;)" title="\large W=\frac{1}{2}\iiint dV\rho \left ( \vec{r} \right )\Phi \left ( \vec{r} \right )" /></a>
+        <p><strong>Energie in Exterenen Potential:</strong> (Ladung wird in externes Potential gegeben)</p>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;W=\sum_{i}q_{i}\Phi&space;\left&space;(&space;\vec{r_{i}}&space;\right&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;W=\sum_{i}q_{i}\Phi&space;\left&space;(&space;\vec{r_{i}}&space;\right&space;)" title="\large W=\sum_{i}q_{i}\Phi \left ( \vec{r_{i}} \right )" /></a>
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;W_{ext}=\iiint&space;dV\rho&space;\left&space;(&space;\vec{r}&space;\right&space;)\Phi_{ext}&space;\left&space;(&space;\vec{r}&space;\right&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;W_{ext}=\iiint&space;dV\rho&space;\left&space;(&space;\vec{r}&space;\right&space;)\Phi_{ext}&space;\left&space;(&space;\vec{r}&space;\right&space;)" title="\large W_{ext}=\iiint dV\rho \left ( \vec{r} \right )\Phi_{ext} \left ( \vec{r} \right )" /></a>
+
+      </div>
 
       <br>
    </div>
